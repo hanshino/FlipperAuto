@@ -1,0 +1,43 @@
+{
+  "type": "点击",
+  "delayUnit": 1,
+  "condition": {
+    "type": "image",
+    "repeatWhenFalse": true,
+    "repeatWhenFalseLimitTimes": 0,
+    "repeatWhenFalseRepeatDelay": 1000,
+    "image": {
+      "type": "image",
+      "imageData": {
+        "data": "iVBORw0KGgoAAAANSUhEUgAAACoAAAAeCAYAAABaKIzgAAAABHNCSVQICAgIfAhkiAAAAOtJREFUWIXtlC0OhDAQhR/N4tAcCMIV0AQMF+EY9AC4InBgOAsGjaIhXbVNgRUbws82mc/NS8WXTOc58zwr/DmMMbCnJX5BKWWP6MsMpJTgnKNtWwBAGIZI0xSu6z4iaLIS5ZxDCKFnIQSUUsjzXGfDMKDveyzLcomQ7/uIomiXO+YxxXGMaZpWDzzPQ1VVek6SBOM4XiL5oWmaXWbFHwU2qw+CAHVdY5uZFEVx+eq/sVq9lBJlWaLrOi2ZZdlfHJNjQ+EDFv1Ra0Sp8I9ChX8XVPhnQ4V/NtaIUuEfhQr/Lqjwz4YK/2ysEX0Dl8ThP59Ou5QAAAAASUVORK5CYII=",
+        "imageWidth": 42,
+        "imageHeight": 30,
+        "imageLeft": 472,
+        "imageTop": 27,
+        "screenWidth": 540,
+        "screenHeight": 960,
+        "screenDpi": 1.5
+      },
+      "limitArea": "85.486115% 1.9444445% 96.875% 7.824075%",
+      "searchMode": "COLOR",
+      "minSimilarPercent": 60,
+      "codeVersion": "V1_7",
+      "imageScaleType": "dpi"
+    },
+    "desc": ""
+  },
+  "scriptCallbacks": {
+    "afterExecSuc": {
+      "type": "控制执行",
+      "delayUnit": 1,
+      "controlRunType": "jumpTo",
+      "jumpToPosition": "-5",
+      "ContinueParentExecute": false
+    }
+  },
+  "posData": {
+    "type": "location",
+    "x": "50%",
+    "y": "50%"
+  }
+}
