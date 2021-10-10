@@ -10,7 +10,7 @@ const zjsFiles = fs
 // 逐筆檔案讀取
 zjsFiles.forEach((file) => {
   // 讀取檔案
-  const zjsFile = fs.readFileSync(path.join("./腳本", file), "utf8");
+  const zjsFile = fs.readFileSync(path.join("./腳本", file), "utf8").trim();
   // 用換行來逐行分析
   const lines = zjsFile.split("\n");
   // 將第一行內容寫入 ./變數宣告 下
@@ -18,8 +18,8 @@ zjsFiles.forEach((file) => {
     path.join("./變數宣告", file.replace(".zjs", ".json")),
     lines[0]
   );
-  // 如果有三行以上，第二行為介面宣告，第三行為腳本內容
-  if (lines.length > 3) {
+  // 如果有三行，第二行為介面宣告，第三行為腳本內容
+  if (lines.length === 3) {
     // 將第二行內容寫入 ./介面宣告 下
     writeScriptFile(
       path.join("./介面宣告", file.replace(".zjs", ".json")),
@@ -50,7 +50,7 @@ function writeScriptFile(fileName, content) {
     // 將內容轉為`json`
     const json = JSON.parse(content);
     // 將內容寫入檔案
-    fs.writeFileSync(fileName, JSON.stringify(json, null, 2) + "\n", "utf8");
+    fs.writeFileSync(fileName, JSON.stringify(json, null, 2), "utf8");
     console.log(`${fileName} 寫入成功`);
     return true;
   } catch (err) {

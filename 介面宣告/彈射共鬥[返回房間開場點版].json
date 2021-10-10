@@ -1,0 +1,54 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "vars": [
+    {
+      "name": "COOP",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "共鬥房間人數",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "selectItems": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "FORCE",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "強制點版",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "[1] 強制點版\n[0] 給auto開技能",
+        "selectItems": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "WAIT",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "超時退出",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "指定時間內沒打完退出",
+        "number": 20
+      }
+    }
+  ],
+  "dialogTitle": "選擇開始人數"
+}

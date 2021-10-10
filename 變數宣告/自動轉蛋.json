@@ -1,0 +1,13 @@
+{
+  "repeatCount": -1,
+  "pauseOnFail": true,
+  "count": 4,
+  "description": "",
+  "minVerCode": 56,
+  "minVerName": "2.10.0",
+  "screenWidth": 960,
+  "screenHeight": 540,
+  "screenDpi": 1.5,
+  "savedVerCode": 2020030,
+  "savedVerName": "2.20.3"
+}

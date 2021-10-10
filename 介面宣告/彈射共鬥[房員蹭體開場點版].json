@@ -1,0 +1,55 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "vars": [
+    {
+      "name": "SEARCH",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "選擇搜尋房間列表",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "[1]一般BOSS列表\n[2]活動BOSS列表",
+        "selectItems": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "FORCE",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "強制點版",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "[1] 強制點版\n[0] 給auto開技能",
+        "selectItems": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "name": "WAIT",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "超時退出",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "幾秒後退出",
+        "number": 20
+      }
+    }
+  ],
+  "dialogTitle": "選擇搜尋房間列表位置"
+}

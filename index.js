@@ -1,17 +1,52 @@
 // 這個檔案將會把自動精靈的相關設定打包成一個檔案
-// 並且將檔案放在自動精靈的目錄中
+// 並且將檔案放在腳本的目錄中
 // 並且將檔案的名稱設定為自動精靈的名稱
+// 最後會將腳本製作成 .zip
 
 const fs = require("fs");
+const archiver = require("archiver");
+const zipFileName = "彈射腳本.zip";
+const output = fs.createWriteStream(zipFileName);
+const archive = archiver("zip");
+
+output.on("close", function () {
+  console.log(archive.pointer() + " total bytes");
+  console.log(
+    "archiver has been finalized and the output file descriptor has closed."
+  );
+});
+
+archive.on("error", function (err) {
+  throw err;
+});
+
+archive.pipe(output);
 
 // 讀取 ./介面宣告 下的所有檔案
-const UIfiles = fs.readdirSync("./介面宣告");
+const UIfiles = fs
+  .readdirSync("./介面宣告")
+  .filter((file) => file.endsWith(".json"));
 
 // 讀取 ./腳本內容 下的所有檔案
-const scriptFiles = fs.readdirSync("./腳本內容");
+const scriptFiles = fs
+  .readdirSync("./腳本內容")
+  .filter((file) => file.endsWith(".json"));
 
 // 讀取 ./變數宣告 下的所有檔案
-const variableFiles = fs.readdirSync("./變數宣告");
+const variableFiles = fs
+  .readdirSync("./變數宣告")
+  .filter((file) => file.endsWith(".json"));
+
+function minify(fileName) {
+  try {
+    let content = fs.readFileSync(fileName, "utf8");
+    console.log(`${fileName} 轉換成功`);
+    return JSON.stringify(JSON.parse(content));
+  } catch (err) {
+    console.error(`${fileName} 轉換失敗`);
+    throw err; // keep throwing
+  }
+}
 
 // 逐筆讀取 variableFiles
 variableFiles.forEach((variableFile) => {
@@ -20,20 +55,20 @@ variableFiles.forEach((variableFile) => {
 
   const lines = [];
   // 將內容讀取出來 並且minify存進 lines
-  let variableContent = fs.readFileSync(`./變數宣告/${variableFile}`, "utf8");
-  lines.push(JSON.stringify(JSON.parse(variableContent)));
+  let variableContent = minify(`./變數宣告/${variableFile}`);
+  lines.push(variableContent);
 
   // 如果在介面宣告下有相同的檔案名稱
   // 也將內容存進 lines
   if (UIfiles.includes(variableFile)) {
-    let UIcontent = fs.readFileSync(`./介面宣告/${variableFile}`, "utf8");
-    lines.push(JSON.stringify(JSON.parse(UIcontent)));
+    let UIcontent = minify(`./介面宣告/${variableFile}`);
+    lines.push(UIcontent);
   }
 
   // 將 ./腳本內容 下的檔案內容讀取出來
   // 並且將內容存進 lines
-  let scriptContent = fs.readFileSync(`./腳本內容/${variableFile}`, "utf8");
-  lines.push(JSON.stringify(JSON.parse(scriptContent)));
+  let scriptContent = minify(`./腳本內容/${variableFile}`);
+  lines.push(scriptContent);
 
   // 將 lines 存進一個 ./腳本 內，副檔名為 .zjs
   fs.writeFileSync(
@@ -42,3 +77,7 @@ variableFiles.forEach((variableFile) => {
     "utf8"
   );
 });
+
+archive.glob("**/*.zjs", { cwd: "./腳本" });
+
+archive.finalize();
