@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-10-10
+### Added
+- 新增[AllenChen](https://home.gamer.com.tw/home.php?owner=GH5654412)大開發的腳本
+### Chnaged
+- 調整小工具的打包方式
+- 調整小工具的解析方式
 ## [1.0.0] - 2021-10-10
 ### Added
 - [歷史紀錄](CHANGELOG.md)
