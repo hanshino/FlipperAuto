@@ -1,0 +1,110 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "vars": [
+    {
+      "name": "火超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "風超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "闇超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "雷超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "摩天樓",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "光廢",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "大蛇",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "水超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    }
+  ]
+}

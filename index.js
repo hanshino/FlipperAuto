@@ -22,11 +22,6 @@ archive.on("error", function (err) {
 
 archive.pipe(output);
 
-// 讀取 ./介面宣告 下的所有檔案
-const UIfiles = fs
-  .readdirSync("./介面宣告")
-  .filter((file) => file.endsWith(".json"));
-
 // 讀取 ./腳本內容 下的所有檔案
 const scriptFiles = fs
   .readdirSync("./腳本內容")
@@ -58,17 +53,14 @@ variableFiles.forEach((variableFile) => {
   let variableContent = minify(`./變數宣告/${variableFile}`);
   lines.push(variableContent);
 
-  // 如果在介面宣告下有相同的檔案名稱
-  // 也將內容存進 lines
-  if (UIfiles.includes(variableFile)) {
-    let UIcontent = minify(`./介面宣告/${variableFile}`);
-    lines.push(UIcontent);
-  }
-
-  // 將 ./腳本內容 下的檔案內容讀取出來
+  // 將 ./腳本內容 下的相關檔案內容讀取出來
   // 並且將內容存進 lines
-  let scriptContent = minify(`./腳本內容/${variableFile}`);
-  lines.push(scriptContent);
+  scriptFiles
+    .filter((scriptFile) => scriptFile.startsWith(variableFile))
+    .forEach((file) => {
+      let scriptContent = minify(`./腳本內容/${file}`);
+      lines.push(scriptContent);
+    });
 
   // 將 lines 存進一個 ./腳本 內，副檔名為 .zjs
   fs.writeFileSync(

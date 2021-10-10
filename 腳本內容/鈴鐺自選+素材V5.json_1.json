@@ -1,0 +1,75 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "vars": [
+    {
+      "name": "search",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "textLineAfter": "1 火素材  7 火崩70\n2 水素材  8水崩70\n3 雷素材  9 雷崩70\n4 風素材  10 風崩70\n5 光素材  11 光崩70\n6 闇素材  12 闇崩70",
+        "selectItems": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    },
+    {
+      "name": "A",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInputInObjectSubVar": false,
+        "showInputLabel": "",
+        "mustInput": true,
+        "number": 0
+      }
+    },
+    {
+      "name": "acv",
+      "value": {
+        "varType": "number",
+        "varScope": "global",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "活動數量(選擇崩壞上方活動數)",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "selectItems": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "name": "B",
+      "value": {
+        "varType": "number",
+        "varScope": "script",
+        "showInput": true,
+        "showInputInObjectSubVar": true,
+        "showInputLabel": "當機重啟次數(每200次=1分鐘)",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "number": 1000
+      }
+    }
+  ]
+}

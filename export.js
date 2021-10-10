@@ -16,28 +16,22 @@ zjsFiles.forEach((file) => {
   // 將第一行內容寫入 ./變數宣告 下
   writeScriptFile(
     path.join("./變數宣告", file.replace(".zjs", ".json")),
-    lines[0]
+    lines.shift()
   );
-  // 如果有三行，第二行為介面宣告，第三行為腳本內容
-  if (lines.length === 3) {
-    // 將第二行內容寫入 ./介面宣告 下
-    writeScriptFile(
-      path.join("./介面宣告", file.replace(".zjs", ".json")),
-      lines[1]
-    );
-    // 將第三行內容寫入 ./腳本內容 下
-    writeScriptFile(
-      path.join("./腳本內容", file.replace(".zjs", ".json")),
-      lines[2]
-    );
-  } else {
-    // 如果只有兩行，第二行必為腳本內容
-    // 將第二行內容寫入 ./腳本內容 下
-    writeScriptFile(
-      path.join("./腳本內容", file.replace(".zjs", ".json")),
-      lines[1]
-    );
-  }
+
+  let scriptCount = 1;
+
+  // 逐筆判斷剩下的內容寫入腳本內容
+  lines.forEach((line) => {
+    let fileName = file.replace(".zjs", ".json");
+    let filePath;
+
+    fileName = `${fileName}_${scriptCount}.json`;
+    scriptCount++;
+    filePath = path.join("./腳本內容", fileName);
+
+    writeScriptFile(filePath, line);
+  });
 });
 
 /**
