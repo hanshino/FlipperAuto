@@ -1,0 +1,9 @@
+{
+  "name": "flipper_auto",
+  "version": "1.0.0",
+  "description": "World Flipper Auto Script by 自動精靈",
+  "main": "index.js",
+  "repository": "https://github.com/hanshino/FlipperAuto.git",
+  "author": "hanshino <c0952199517@gmail.com>",
+  "license": "MIT"
+}
