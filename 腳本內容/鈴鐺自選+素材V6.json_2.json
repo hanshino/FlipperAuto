@@ -1,0 +1,119 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "desc": "設定哪些要忽略",
+  "vars": [
+    {
+      "name": "火超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "風超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "闇超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "雷超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "摩天樓",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "光廢",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "大蛇",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "水超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "水廢",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "showInputContentAlign": "left",
+        "value": false
+      }
+    },
+    {
+      "name": "光超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "showInputContentAlign": "left",
+        "value": false
+      }
+    }
+  ]
+}
