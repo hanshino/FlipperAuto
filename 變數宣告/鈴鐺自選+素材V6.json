@@ -1,0 +1,15 @@
+{
+  "delay": "300",
+  "delayUnit": 0,
+  "repeatCount": 0,
+  "pauseOnFail": false,
+  "count": 27,
+  "description": "",
+  "minVerCode": 2021000,
+  "minVerName": "2.21.0",
+  "screenWidth": 540,
+  "screenHeight": 960,
+  "screenDpi": 1.5,
+  "savedVerCode": 2021020,
+  "savedVerName": "2.21.2"
+}
