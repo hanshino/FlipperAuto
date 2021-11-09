@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.3] - 2021-11-09
+
+### Changed
+
+- 將 **鈴鐺自選+素材 V6** 改為 **鈴鐺自選**，將 **素材耗體** 刪除。
+
 ## [1.1.2] - 2021-11-05
 
 ### Added

@@ -1,8 +1,0 @@
-{
-  "type": "打开应用",
-  "delay": "5",
-  "delayUnit": 1,
-  "appPackageName": "air.com.gamania.worldflipper",
-  "closeBeforeOpen": true,
-  "onlyClose": false
-}
