@@ -1,0 +1,17 @@
+{
+  "type": "打开应用",
+  "delay": "5",
+  "delayUnit": 1,
+  "scriptCallbacks": {
+    "afterExecSuc": {
+      "type": "控制执行",
+      "delayUnit": 1,
+      "controlRunType": "jumpTo",
+      "jumpToPosition": "-2",
+      "ContinueParentExecute": false
+    }
+  },
+  "appPackageName": "air.com.gamania.worldflipper",
+  "closeBeforeOpen": true,
+  "onlyClose": false
+}
