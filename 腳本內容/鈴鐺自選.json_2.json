@@ -11,6 +11,8 @@
         "showInput": true,
         "mustInput": true,
         "rememberInputValue": true,
+        "textLineBefore": "以下請選擇要忽略的關卡",
+        "showInputContentAlign": "left",
         "value": false
       }
     },
@@ -105,6 +107,30 @@
     },
     {
       "name": "光超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "showInputContentAlign": "left",
+        "value": false
+      }
+    },
+    {
+      "name": "超人超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "mustInput": true,
+        "rememberInputValue": true,
+        "showInputContentAlign": "left",
+        "value": false
+      }
+    },
+    {
+      "name": "基因高加",
       "value": {
         "varType": "bool",
         "varScope": "script",
