@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.4] - 2021-12-01
+
+### Added
+
+- 新增活動 **大海遺產** 的忽略選項
+
+### Changed
+
+- 修改打包成功後的檔案名稱
+
 ## [1.1.3] - 2021-11-09
 
 ### Changed

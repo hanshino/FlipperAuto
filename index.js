@@ -5,7 +5,7 @@
 
 const fs = require("fs");
 const archiver = require("archiver");
-const zipFileName = "彈射腳本.zip";
+const zipFileName = "FlipperAuto.zip";
 const output = fs.createWriteStream(zipFileName);
 const archive = archiver("zip");
 
