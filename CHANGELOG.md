@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.5] - 2021-12-01
+
+### Added
+
+- 新增[綠風](https://home.gamer.com.tw/home.php?owner=GreenwindTX)大大開發的腳本
+
 ## [1.1.4] - 2021-12-01
 
 ### Added
