@@ -1,0 +1,40 @@
+{
+  "type": "点击",
+  "delayUnit": 1,
+  "repeatCount": 10,
+  "repeatDelayValue": "100",
+  "repeatDelayUnit": 0,
+  "condition": {
+    "type": "conditionSet",
+    "conditions": [
+      {
+        "type": "jsExpression",
+        "expression": "C == true",
+        "desc": ""
+      },
+      {
+        "type": "colorFound",
+        "runWhenFalse": true,
+        "colorData": {
+          "type": "color",
+          "x": "32.8%",
+          "y": "49.8%",
+          "color": "#fafafa",
+          "limitPosX": "32.8%",
+          "limitPosY": "49.8%",
+          "similarPercent": 100
+        },
+        "desc": ""
+      }
+    ],
+    "matchMode": "and",
+    "checkInMultiThreads": false,
+    "desc": ""
+  },
+  "desc": "點版",
+  "posData": {
+    "type": "location",
+    "x": "50%",
+    "y": "50%"
+  }
+}

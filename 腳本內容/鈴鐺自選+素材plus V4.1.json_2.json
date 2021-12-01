@@ -1,0 +1,109 @@
+{
+  "type": "设置变量",
+  "delayUnit": 1,
+  "condition": {
+    "type": "jsExpression",
+    "expression": "拒接 == true",
+    "desc": ""
+  },
+  "vars": [
+    {
+      "name": "大蛇",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "火超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "風超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "闇超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "雷超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "水超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "光超",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    },
+    {
+      "name": "遺產",
+      "value": {
+        "varType": "bool",
+        "varScope": "script",
+        "showInput": true,
+        "showInputLabel": "",
+        "mustInput": true,
+        "rememberInputValue": true,
+        "value": false
+      }
+    }
+  ],
+  "dialogTitle": "請選擇拒接關卡",
+  "dialogOKText": "開始運行"
+}
